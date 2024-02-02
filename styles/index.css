@@ -180,9 +180,9 @@ ul {
     margin: 100px auto;
     display: grid;
 
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(4,1fr);
-    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
     gap: 10px;
 
 }
@@ -190,5 +190,132 @@ ul {
 .destination-grid img {
     width: 100%;
     height: 300px;
+
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .destination-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .nav-button button {
+        visibility: hidden;
+    }
+    .general-padding {
+        padding: 0px calc((130 / 1440) * 100%);
+        margin: auto;
+    }
+    .tour {
+        flex-direction:column-reverse;
+        gap: 30px;
+        margin-top: 50px;
     
+    }
+    .text-section {
+        padding-top: 40px;
+    }
+    .text-section h1 {
+        margin: 10px;    
+        font-size: 34px;
+        padding: 10px;
+    
+    }
+    .input-section {
+        flex-direction: column;
+        padding: 50px;
+    
+    }
+    .text-section p {
+        line-height: 20px;
+        padding: 10px calc((100 / 1440) * 100%);
+    }
+    .text-section {
+        padding-top: 30px;
+    }
+    .section-bar {
+        
+        height: 500px;
+    }
+    .input-section form input {
+        
+        
+        width: 200px;
+        height: 36px;
+        margin-left: 5px;
+        margin-top: 5px;
+    
+    }
+    .tour-img > img{
+        width: calc((1170 / 1440) * 100%);
+        
+    }
+
+
+}
+
+@media screen and (min-width:577px) and (max-width:800px){
+    .navbar {
+        flex-direction: column;
+        
+    }
+    .destination-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        
+    }
+    .general-padding {
+        padding: 0px calc((100 / 1440) * 100%);
+        margin: auto;
+    }
+    .tour {
+        flex-direction:column-reverse;
+        gap: 30px;
+        margin-top: 50px;
+    
+    }
+    .input-section form input {
+        
+        
+        width: 200px;
+        height: 42px;
+        margin-left: 10px;
+        margin-top: 10px;
+    
+    }
+    .input-section {
+        flex-direction: column;
+        padding: 10px;
+    
+    }
+    .text-section {
+        padding-top: 30px;
+    }
+    .text-section h1 {
+        
+        font-size: 34px;
+        padding: 5px;
+        margin: 10px;
+   
+    
+    }
+    .text-section p {
+        line-height: 25px;
+        padding: 10px calc((150 / 1440) * 100%);
+    }
+    .text-section {
+        padding-top: 10px;
+    }.section-bar {
+        
+        height: 500px;
+    }
+    .tour-img > img{
+        width: calc((1170 / 1440) * 100%);
+        
+    }
+
+
 }
